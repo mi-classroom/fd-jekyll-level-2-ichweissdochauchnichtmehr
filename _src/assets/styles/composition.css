@@ -1,0 +1,139 @@
+/* stylelint-disable no-descending-specificity */
+
+/* Page Layout
+############################################################################ */
+
+main {
+  display: grid;
+}
+
+.main-content-wrap {
+  overflow: auto;
+  width: 100%;
+}
+
+/* Grid
+############################################################################ */
+.grid {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  gap: var(--fluid-space-m);
+  grid-template-columns: repeat(auto-fit, minmax(var(--max-col-width), 1fr));
+}
+
+.grid[data-col-width="s"] {
+  grid-template-columns: repeat(auto-fit, minmax(var(--max-col-width-small), 1fr));
+}
+
+.grid[data-col-width="xs"] {
+  grid-template-columns: repeat(auto-fit, minmax(var(--max-col-width-xsmall), 1fr));
+}
+
+.grid[data-col-gap="xs"] {
+  gap: var(--fluid-space-xs);
+}
+
+.grid[data-col-gap="s"] {
+  gap: var(--fluid-space-s);
+}
+
+/* Small Grid
+############################################################################ */
+.grid-small {
+  display: grid;
+  gap: var(--fluid-space-s);
+}
+
+@media only screen and (min-width: 22rem) {
+  .grid-small {
+    grid-template-columns: repeat(auto-fit, minmax(var(--max-col-width-small), 1fr));
+  }
+}
+
+/* Large Grid
+############################################################################ */
+.grid-large {
+  display: grid;
+  gap: var(--fluid-space-m);
+}
+
+@media only screen and (min-width: 33rem) {
+  .grid-large {
+    grid-template-columns: repeat(auto-fit, minmax(var(--max-col-width-large), 1fr));
+  }
+}
+
+/* Vertical Stack
+############################################################################ */
+.vertical-stack {
+  & > *:not(details) {
+    padding-top: var(--xxl);
+  }
+}
+
+/* Limited Box
+############################################################################ */
+
+.limited-box {
+  max-width: var(--max-width-content);
+}
+
+/* Section
+############################################################################ */
+
+section,
+.section {
+  padding-top: var(--fluid-space-l);
+  padding-bottom: var(--fluid-space-l);
+}
+
+section > * + *,
+.section > * + * {
+  margin-top: var(--xxl);
+}
+
+section.is-large,
+.section.is-large {
+  display: flex;
+  justify-content: center;
+}
+
+section.is-large > *,
+.section.is-large {
+  max-width: var(--large-content);
+}
+
+/* Columns
+############################################################################ */
+
+[data-columns] {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fluid-space-m);
+
+  @media only screen and (min-width: 33rem) {
+    display: grid;
+    gap: var(--fluid-space-s);
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Box Widths & heights
+############################################################################ */
+
+[data-box-width="s"] {
+  max-width: var(--max-width-content-s);
+}
+
+[data-box-width="m"] {
+  max-width: var(--max-width-content-m);
+}
+
+[data-box-width="l"] {
+  max-width: var(--max-width-content-l);
+}
+
+[data-box-width="xl"] {
+  max-width: var(--max-width-content-xl);
+}

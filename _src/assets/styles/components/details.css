@@ -1,0 +1,74 @@
+/* Details
+############################################################################ */
+
+details {
+  margin-left: var(--l);
+  transition: padding var(--tr-slow), margin var(--tr-slow), opacity var(--tr-medium);
+}
+
+details summary {
+  position: relative;
+  padding-left: var(--l);
+  margin-left: calc(var(--l) * -1);
+  list-style: none;
+}
+
+details summary > h3 {
+  display: inline-block;
+}
+
+details summary:hover {
+  cursor: pointer;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin-right: var(--xxs);
+  color: var(--interaction-color);
+  content: "chevron_right";
+  direction: ltr;
+  font-family: var(--font-icons);
+  font-feature-settings: "liga";
+  font-size: var(--l);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 200,
+    "GRAD" -25,
+    "opsz" 48;
+  font-weight: var(--fw-bold);
+  letter-spacing: normal;
+  text-rendering: optimizelegibility;
+  text-transform: none;
+  transition: transform ease-in-out 200ms;
+  vertical-align: top;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+details[open] {
+  padding-bottom: var(--l);
+  border-bottom: solid var(--border-width-l) var(--seperator-color);
+  margin-top: var(--fluid-space-l);
+  margin-bottom: var(--fluid-space-l);
+  opacity: 1 !important;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.vertical-stack:has(details[open]) > details {
+  opacity: var(--op-medium);
+}

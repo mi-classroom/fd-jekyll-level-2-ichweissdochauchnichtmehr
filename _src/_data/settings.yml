@@ -1,0 +1,12 @@
+basic_settings:
+  site_title: WebXR // Augmented und Virtual-Reality im Web
+  favicon_image: /assets/images/favicons/favicon.ico
+  description: In der Medieninformatik haben wir das Thema WebXR im Studienjahr 2023 mal auf die Agenda genommen. Hier finden sich eine Ergebnisse, Learnings und Ideen. Viel Spaß.
+
+
+advanced_settings:
+  ajax_loading: true
+  analytics_code: ""
+  custom_styles: ""
+  header_js: ""
+  footer_js: ""

@@ -1,0 +1,58 @@
+/* stylelint-disable selector-class-pattern */
+
+/* Icons
+############################################################################ */
+.icon {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin-right: var(--xxs);
+  direction: ltr;
+  font-family: var(--font-icons);
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 200,
+    "GRAD" -25,
+    "opsz" 48;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: inherit;
+  text-rendering: optimizelegibility;
+  text-transform: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.icon--s {
+  font-size: var(--s);
+  line-height: var(--s);
+}
+
+.icon--m {
+  font-size: var(--m);
+  line-height: var(--l);
+}
+
+.icon--l {
+  font-size: var(--l);
+  line-height: var(--m);
+}
+
+.icon--xl {
+  font-size: var(--xl);
+  line-height: var(--xl);
+}
+
+.icon.md-dark { color: var(--dark); }
+.icon.md-light { color: var(--light); }
+
+.icon::before {
+  content: attr(data-icon);
+}
+
+.icon.red { color: red; }

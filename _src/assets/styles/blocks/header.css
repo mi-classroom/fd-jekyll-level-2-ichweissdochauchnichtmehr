@@ -1,0 +1,47 @@
+/* header
+############################################################################ */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+  border-bottom: solid var(--mi-grau) var(--border-width-l);
+  background-color: var(--background-color);
+}
+
+.header.is-transparent {
+  background-color: transparent;
+}
+
+.header.is-grey {
+  border-bottom: none;
+  background-color: var(--mi-hellgrau);
+}
+
+/* Logo
+############################################################################ */
+
+.logo {
+  display: flex;
+  max-width: var(--max-width-logo);
+  flex-direction: column;
+  align-self: flex-start;
+  border: none;
+  margin-bottom: var(--fluid-space-m);
+  margin-left: auto;
+  text-decoration: none;
+}
+
+.logo svg {
+  width: 100%;
+}
+
+.logo p {
+  font-family: var(--font-family-headlines);
+  font-size: var(--s);
+}
+
+.logo:hover {
+  background-color: transparent;
+  transform: rotate(90deg) scale(0.8);
+}

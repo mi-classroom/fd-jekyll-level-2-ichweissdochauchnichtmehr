@@ -1,0 +1,25 @@
+/* stylelint-disable selector-class-pattern */
+
+/* Articles
+############################################################################ */
+
+.article-overview-item {
+  margin-bottom: var(--fluid-space-l);
+}
+
+.article-overview-item + .article-overview-item {
+  padding-top: var(--fluid-space-l);
+  border-top: solid var(--border-width) var(--seperator-color);
+}
+
+.article-overview-item__title {
+  margin-bottom: var(--quad);
+}
+
+.article-overview-item__subtitle {
+  color: var(--mi-blau);
+}
+
+.article-teasertext {
+  margin-top: calc(var(--fluid-space-m));
+}

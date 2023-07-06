@@ -1,0 +1,41 @@
+@font-face {
+  font-display: swap;
+  font-family: PTSans;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/PT_Sans/PT_Sans-Web-Regular.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: PTSans;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/PT_Sans/PT_Sans-Web-Bold.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: RobotoSlab;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/Roboto_Slab/RobotoSlab-Regular.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: RobotoSlab;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/Roboto_Slab/RobotoSlab-Bold.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: MaterialIcons;
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("../../fonts/MaterialIcons-4.0.0/MaterialIconsOutlined-Regular.otf"),
+    url("../../fonts/MaterialIcons-4.0.0/MaterialIconsOutlined-Regular.ttf") format("truetype");
+}

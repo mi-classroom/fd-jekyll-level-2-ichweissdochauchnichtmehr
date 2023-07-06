@@ -1,0 +1,29 @@
+baseurl: "/web-xr"
+
+source: ./_src
+destination: ./_site
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: "images/small"
+    values:
+      image: true
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  
+plugins:
+  - jekyll-image-size
+
+collections:
+  faq:
+    output: false
+
+  

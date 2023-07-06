@@ -1,0 +1,39 @@
+/* Herotext
+############################################################################ */
+
+.herotext {
+  h1,
+  h2 {
+    font-size: var(--l);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-tight);
+  }
+
+  & > * {
+    max-width: var(--max-width-content);
+    line-height: var(--lh-default);
+
+    &:not(h1,h2,h3,h4) {
+      font-weight: var(--fw-light);
+    }
+  }
+
+  @media only screen and (min-width: 33rem) {
+    h1,
+    h2 {
+      font-size: var(--xxl);
+      font-weight: var(--fw-bold);
+      line-height: var(--lh-tight);
+    }
+
+    & > * {
+      max-width: var(--max-width-content);
+      font-size: var(--m);
+      line-height: var(--lh-default);
+
+      &:not(h1,h2,h3,h4) {
+        font-weight: var(--fw-light);
+      }
+    }
+  }
+}

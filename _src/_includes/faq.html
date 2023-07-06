@@ -1,0 +1,11 @@
+{% assign faqs = site.faq%}
+
+
+<div class="vertical-stack">
+{% for faq in faqs %}
+    <details class="limited-box">
+        <summary><h3>{{ faq.title }}</h3></summary>
+        {{ faq.content | markdownify }}
+    </details>
+{% endfor %}
+</div>

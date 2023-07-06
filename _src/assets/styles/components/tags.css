@@ -1,0 +1,33 @@
+/* Tags
+############################################################################ */
+
+ul.tags {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul.tags li {
+  display: inline-block;
+  padding: var(--quarter) var(--half);
+  background-color: var(--light);
+  border-radius: var(--border-radius-l);
+  font-size: var(--xs);
+  transition: background-color var(--tr-fast), color var(--tr-fast);
+}
+
+ul.tags li:hover {
+  background-color: var(--dark);
+  color: var(--lightest);
+  cursor: pointer;
+}
+
+ul.tags li + li {
+  margin-left: var(--half);
+}
+
+ul.tags li::before {
+  padding: 0;
+  margin: 0;
+  content: "";
+}

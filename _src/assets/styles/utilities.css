@@ -1,0 +1,48 @@
+/* Backgrounds
+############################################################################ */
+.is-dark {
+  background-color: var(--dark);
+
+  --text-color: var(--light);
+  --headline-color: var(--light);
+  --link-color: var(--lightest);
+}
+
+.is-dark h2 { opacity: var(--op-medium); }
+
+.is-light {
+  background-color: var(--lightest);
+}
+
+.is-grey {
+  background-color: var(--mi-hellgrau);
+}
+
+.is-blue {
+  background-color: var(--mi-blau);
+}
+
+.is-blue * {
+  color: var(--lightest);
+}
+
+/* Observe
+############################################################################ */
+
+.is-screwed[data-js-observe] {
+  transform: skewY(25deg) scale(0.5) scaleX(0.8);
+  transition: transform var(--tr-slow);
+}
+
+.is-screwed[data-js-observe="in-view"] {
+  transform: skewY(0deg) scaleX(1);
+}
+
+/* Misc
+############################################################################ */
+
+.is-sticky-left {
+  position: sticky;
+  z-index: 1;
+  left: 0;
+}

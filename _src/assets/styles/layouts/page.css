@@ -1,0 +1,15 @@
+/* Page Layout
+############################################################################ */
+
+.page {
+  max-width: var(--max-width-content);
+}
+
+.page h1 {
+  padding-top: var(--fluid-space-m);
+  padding-bottom: var(--fluid-space-s);
+  color: var(--dark);
+  font-family: var(--font-family-sans);
+  font-size: var(--xxxl);
+  font-weight: var(--fw-bold);
+}

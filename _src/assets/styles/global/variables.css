@@ -1,0 +1,133 @@
+/* stylelint-disable custom-property-pattern */
+
+:root {
+  /* Sizes
+https://utopia.fyi/type/calculator/
+---------------------------------------------------------------------------- */
+
+  --step--2: clamp(0.69rem, calc(0.67rem + 0.13vw), 0.8rem);
+  --step--1: clamp(0.83rem, calc(0.79rem + 0.21vw), 1rem);
+  --step-0: clamp(1rem, calc(0.94rem + 0.31vw), 1.25rem);
+  --step-1: clamp(1.2rem, calc(1.11rem + 0.45vw), 1.56rem);
+  --step-2: clamp(1.44rem, calc(1.31rem + 0.64vw), 1.95rem);
+  --step-3: clamp(1.73rem, calc(1.55rem + 0.89vw), 2.44rem);
+  --step-4: clamp(2.07rem, calc(1.83rem + 1.22vw), 3.05rem);
+  --step-5: clamp(2.49rem, calc(2.16rem + 1.66vw), 3.82rem);
+  --xxs: var(--step--2);
+  --xs: var(--step--1);
+  --s: var(--step-0);
+  --m: var(--step-1);
+  --l: var(--step-2);
+  --xl: var(--step-3);
+  --xxl: var(--step-4);
+  --xxxl: var(--step-5);
+
+  /* Font Properties
+---------------------------------------------------------------------------- */
+  --font-family-serif: "PTSans", "Courier New", monospace;
+  --font-family-sans: "PTSans", sans-serif;
+  --font-family-headlines: "RobotoSlab", sans-serif;
+  --base-font-size: var(--s);
+  --font-icons: "MaterialIcons";
+  --half: calc(var(--base-font-size) / 2);
+  --quarter: calc(var(--base-font-size) / 4);
+
+  /* Font Weights
+---------------------------------------------------------------------------- */
+  --fw-light: 200;
+  --fw-normal: 300;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* Line Heights
+---------------------------------------------------------------------------- */
+  --lh-tight: 110%;
+  --lh-default: 130%;
+  --lh-loose: 150%;
+
+  /* Base Colors
+---------------------------------------------------------------------------- */
+  --light: hsl(0deg 0% 80% / 100%);
+  --lighter: hsl(0deg 0% 90% / 100%);
+  --lightest: hsl(0deg 0% 100% / 100%);
+  --lighten: rgb(255 255 255 / 20%);
+  --dark: hsl(0deg 0% 20% / 100%);
+  --darker: hsl(0deg 0% 10% / 100%);
+  --darkest: hsl(0deg 0% 0% / 100%);
+  --darken: rgb(0 0 0 / 20%);
+  --darken-light: rgb(0 0 0 / 3%);
+  --mi-blau: #4952e1;
+  --mi-pink: #d16;
+  --mi-gruen: #00ad2f;
+  --mi-lila: #9313ce;
+  --mi-black: #231f20;
+  --mi-grau: #aaa;
+  --mi-hellgrau: #efefef;
+
+  /* Functional Colors
+---------------------------------------------------------------------------- */
+  --interaction-color: var(--mi-pink);
+  --decoration-color: var(--mi-gruen);
+  --text-color: var(--darker);
+  --headline-color: var(--dark);
+  --headline-color-light: var(--darker);
+  --border-color: var(--dark);
+  --seperator-color: var(--light);
+  --background-color: color-mix(in srgb, var(--mi-pink) 20%, white);
+  --link-color: var(--darkest);
+
+  /* Spaces
+---------------------------------------------------------------------------- */
+  --fluid-space-xs: 1vw;
+  --fluid-space-s: 2vw;
+  --fluid-space-m: 4vw;
+  --fluid-space-l: 8vw;
+  --fluid-space-xl: 16vw;
+
+  /* Transitions
+---------------------------------------------------------------------------- */
+  --tr-fast: 0.2s;
+  --tr-medium: 0.6s;
+  --tr-slow: 1s;
+
+  /* Opacities
+---------------------------------------------------------------------------- */
+  --op-strong: 0.75;
+  --op-medium: 0.5;
+  --op-low: 0.3;
+
+  /* Content Sizes
+---------------------------------------------------------------------------- */
+  --max-width-text: 60ch;
+  --max-width-logo: calc(var(--max-width-text) / 3);
+  --max-width-content: 44rem;
+  --max-width-content-s: 22rem;
+  --max-width-content-m: 33rem;
+  --max-width-content-l: 55rem;
+  --max-width-content-xl: 66rem;
+  --min-col-width: 5rem;
+  --max-col-width-xsmall: 10rem;
+  --max-col-width-small: 15rem;
+  --max-col-width: 20rem;
+  --max-col-width-large: 30rem;
+  --table-min-width: 60rem;
+  --large-content: 110ch;
+
+  /* Misc
+---------------------------------------------------------------------------- */
+  --bw: 2px;
+  --text-shadow: 0 0 20px var(--darken);
+  --border-width: 2px;
+  --border-width-l: 4px;
+  --border-width-s: 1px;
+  --border-radius-l: 8px;
+  --border-radius: 4px;
+  --border-radius-s: 2px;
+
+  /* Shadows
+---------------------------------------------------------------------------- */
+
+  --box-shadow-m: 0 0 0.5rem rgb(0 0 0 / 20%);
+  --box-shadow-l: 0 0 1rem rgb(0 0 0 / 20%);
+  --box-shadow-xl: 0 0 2rem rgb(0 0 0 / 20%);
+}
