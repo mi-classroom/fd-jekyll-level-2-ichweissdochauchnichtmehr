@@ -15,6 +15,34 @@ headerMode: is-grey
 
 <section id="ideas" title="Ideen, Learnings und mehr" class="articles">
     <h2>Ideen, Learnings und mehr</h2>
+
+    {% for article in site.articles %}
+
+    <div class="article-overview">
+        <div class="article-overview-item">
+            <header>
+                <h3 class="article-overview-item__title">{{article.title}}</h3>
+                <h4 class="article-overview-item__subtitle">{{article.created}}</h4>
+                
+                <ul class="tags">
+                    {% for tag in article.tags %}
+                    <li class="tags__item">{{tag}}</li>
+                    {% endfor %}
+                </ul>
+    
+                <div class="article-teasertext">
+                    <p>
+                    {% assign paragraphs = article.content | split: '</p>' %}
+                    {% assign first_paragraph = paragraphs[0] %}
+                    {{ first_paragraph | append: '</p>' | strip_html }}
+                    </p>
+                    <a class="article-teasertext__link" href="{{article.url}}">weiter lesen</a>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    {% endfor %}
 </section>
 
 <section id="capabilities" title="WebXR/ AR.js Capabilities" class="is-screwed">

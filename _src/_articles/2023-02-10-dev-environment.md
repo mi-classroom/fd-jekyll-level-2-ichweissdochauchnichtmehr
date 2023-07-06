@@ -1,5 +1,6 @@
 ---
 title: Aufbau einer Entwicklungs- und Testumgebung
+created: 10.02.2023
 tags: [Tech, Entwicklungsumgebung]
 ---
 

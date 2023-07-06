@@ -1,6 +1,6 @@
 ---
-layout: page
 title: Unser Einstieg ins Projekt
+created: 01.01.2023
 tags: [Story, Learning]
 slideshow:
 - title: HTML5

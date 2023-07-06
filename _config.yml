@@ -25,5 +25,5 @@ plugins:
 collections:
   faq:
     output: false
-
-  
+  articles:
+    output: true  
